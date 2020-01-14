@@ -1,0 +1,14 @@
+service: hey-lambda-layer
+
+provider:
+  name: aws
+
+layers:
+  hey:
+    path: layer
+    description: A layer for Hey tool to send some load to some http endpoints
+    compatibleRuntimes:
+      - python3.6
+      - python3.7
+      - nodejs10.x
+      - go1.x 
